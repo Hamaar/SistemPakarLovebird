@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="3dp">
+
+        <TextView
+            android:id="@+id/tvID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID                :"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_below="@id/tvID"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Username  :"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:text="Password   :"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:text="FullName    :"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="80dp">
+            <TextView
+                android:id="@+id/tv_custom_ID"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/red"
+                android:textStyle="bold"
+                android:text="ID"/>
+            <TextView
+                android:id="@+id/tv_custom_username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/blue"
+                android:textStyle="bold"
+                android:text="Username"/>
+            <TextView
+                android:id="@+id/tv_custom_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"/>
+            <TextView
+                android:id="@+id/tv_custom_fullname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="FullName"/>
+        </LinearLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>

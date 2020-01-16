@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+
+    <ImageView
+        android:id="@+id/iv_gallery"
+        android:layout_width="match_parent"
+        android:layout_height="420dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="0dp"
+        android:src="@drawable/icon_noimage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+
+    <TextView
+        android:id="@+id/txtGalery"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/scroll"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:textSize="21dp"
+        android:text="@string/penyakit" />
+
+    <HorizontalScrollView
+        android:id="@+id/scroll"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:scrollbars="horizontal"
+        android:overScrollMode="always"
+        android:layout_gravity="center"
+        android:foregroundGravity="center"
+        android:isScrollContainer="true"
+        android:layout_marginTop="20dp"
+        android:scrollbarAlwaysDrawHorizontalTrack="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <ImageView
+                android:id="@+id/iv_galery_btn"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"/>
+            <ImageView
+                android:id="@+id/iv_galery_btn2"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/iv_galery_btn3"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/iv_galery_btn4"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/iv_galery_btn5"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/iv_galery_btn6"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"
+                android:layout_marginLeft="5dp"/>
+            <ImageView
+                android:id="@+id/iv_galery_btn7"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/icon_noimage"
+                android:layout_marginLeft="5dp"/>
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+</LinearLayout>

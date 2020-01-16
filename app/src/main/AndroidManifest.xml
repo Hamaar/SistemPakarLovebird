@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.hilmi.sistempakar">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/icn_logo"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/icn_logo"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".FlashScreen"
+            android:theme="@style/AppThemeFlashScreen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- handle to next INDEX -->
+        <activity
+            android:name=".IndexUtama"
+            android:label="@string/app_name"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".view.activity.Konsultasi"
+            android:label="@string/diagnosa"
+            android:parentActivityName=".IndexUtama" />
+        <!-- <activity android:name=".IndexUtama" /> -->
+        <activity
+            android:name=".view.activity.HasilKonsultasi"
+            android:label="@string/hasildiagnosis" />
+        <activity
+            android:name=".view.activity.ScreenLihatData"
+            android:parentActivityName=".IndexUtama" />
+        <activity
+            android:name=".view.activity.ScreenLihatDataDetil"
+            android:parentActivityName=".view.activity.ScreenLihatData" />
+        <activity
+            android:name=".view.activity.ScreenTentangApps"
+            android:parentActivityName=".IndexUtama" />
+        <activity
+            android:name=".view.activity.ScreenBantuan"
+            android:parentActivityName=".IndexUtama" />
+        <activity
+            android:name=".view.activity.ScreenGallery"
+            android:parentActivityName=".IndexUtama" />
+        <activity android:name=".adminpanel.ScreenAdminDetil" />
+        <activity android:name=".ScreenLogin" />
+        <activity android:name=".adminpanel.ScreenAdmin" />
+        <activity android:name=".adminpanel.ScreenUpdate" />
+        <activity android:name=".adminpanel.ScreenTambahData" />
+        <activity android:name=".Test"></activity>
+    </application>
+
+</manifest>
