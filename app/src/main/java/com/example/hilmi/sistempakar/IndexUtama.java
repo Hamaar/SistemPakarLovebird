@@ -66,8 +66,8 @@ public class IndexUtama extends AppCompatActivity implements View.OnClickListene
                 startActivity(i);
                 break;
             case R.id.tentangCv :this.overridePendingTransition(R.anim.anim_right, R.anim.anim_right);
-                i = new Intent(this, Test.class);
-//                i = new Intent(this, ScreenTentangApps.class);
+//                i = new Intent(this, Test.class);
+                i = new Intent(this, ScreenTentangApps.class);
                 startActivity(i);
                 break;
 
@@ -84,7 +84,7 @@ public class IndexUtama extends AppCompatActivity implements View.OnClickListene
                         .setPositiveButton("Ya", new DialogInterface.OnClickListener() {
                             @Override
                             public void onClick(DialogInterface dialog, int which) {
-                                isFinishing();
+                                finish();
                             }
                         });
                 AlertDialog dialog = builder.create();

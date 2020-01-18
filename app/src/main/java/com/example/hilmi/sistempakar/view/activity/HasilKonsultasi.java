@@ -101,17 +101,11 @@ public class HasilKonsultasi extends AppCompatActivity implements View.OnClickLi
                 keyset = key;
                 Log.d(TAG, "setupData: " + keyset);
                 System.out.println(keyset);
+            } else if (keyset == "") {
+                keyset = "P09";
             }
         }
-        if(keyset==""){
-            keyset="P09";
-        }
-        else if (keyset==null){
-            keyset="P09";
-        }
-//        else if (keySet == null){
-//            keyset="P09";
-//        }
+
 
         Penyakit penyakit = SQLiteHelper.getInstance(this).getPenyakit(keyset);
 //        Gejala gejala = SQLiteHelper.getInstance(this).getGejala(keyset);
@@ -142,8 +136,6 @@ public class HasilKonsultasi extends AppCompatActivity implements View.OnClickLi
             System.out.println("Hasil" + penyakit.getNama_penyakit());
             System.out.println("Hasil" + penyakit.getCara());
         }
-
-
     }
 
     @Override
@@ -160,7 +152,9 @@ public class HasilKonsultasi extends AppCompatActivity implements View.OnClickLi
             default:
 
         }
-
+    }
+    public void onBackPressed() {
+        //super.onBackPressed();
     }
 }
 

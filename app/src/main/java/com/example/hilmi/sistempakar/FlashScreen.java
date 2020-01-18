@@ -26,16 +26,16 @@ public class FlashScreen extends AppCompatActivity {
             if (SessionHelper.getInstance(this) == null){
                 SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P09","TIDAK ADA RULEBASE", "RULEBASE TIDAK AKTIV"));
             }
-            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P01","penyakit snot",
+            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P01","Penyakit snot",
                     "1. Memisahkan burung yang terkena snot dari lovebird lainya\n" +
                     "2. Jaga Kebersihan kandang yang terkena snot\n" +
                     "3. Berikan antibioting dan anti bakteri ataupun obat cair khusu lovebird"));
-            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P02","penyakit diare",
+            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P02","Penyakit diare",
                     "1. Pindahkan burung agak jauh dari burung lainya (Karantina)\n" +
                     "2. Berikan obat diare atau vitamin untuk lovebird"));
-            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P03","penyakit nyilet",
+            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P03","Penyakit nyilet",
                     "1.Karantina lovebird di tempat yang tenang dan sejuk" +
-                    "Burung jangan dimandikan hingga burung sembuh dari nyilet\n" +
+                    "2.Burung jangan dimandikan hingga burung sembuh dari nyilet\n" +
                     "3.Berikan obat antinyilet\n" +
                     "4.Berikan Makanan Extra Fooding kesukaan burung lovebird seperti"));
             SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P04","penyakit egg binding",
@@ -47,44 +47,44 @@ public class FlashScreen extends AppCompatActivity {
                     "1.Karantina lovebird supaya tidak menyebar penyakitnya pada burung lainya\n" +
                     "2.Selalu jaga kerbersihan kandang\n" +
                     "3.Berikan vitamin seperti medoxy, koleridin, s"));
-            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P06","penyakit kutu",
-                    "di mandikan"));
+            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P06","Penyakit kutu",
+                    "1.Jaga kebersihan kandang\n" +
+                            "Mandikan burung dengan menggunakan shampo burung atau shampo anti kutu"));
             SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P07","penyakit ganguan pernafasan",
                     "mata"));
-            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P08","penyakit bubul",
-                    "1.Kebersihan sangkar terutama, tempat bertengger burung yang biasa disebut tangkringan"));
+            SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P08","Penyakit Bubul",
+                    "1.Kebersihan sangkar terutama, tempat bertengger burung yang biasa disebut tangkringan\n" +
+                            "Gunakan salep untuk mengobati kaki burung yang terkena penyakit bubul"));
             SQLiteHelper.getInstance(this).addPENYAKIT(new Penyakit("P09","TIDAK ADA RULEBASE",
                     "RULEBASE TIDAK AKTIV"));
 
 
-            SQLiteHelper.getInstance(this).addGejala(new Gejala("G01","mata mengeluarkan cairan"));
-            SQLiteHelper.getInstance(this).addGejala(new Gejala("G02","kelopak mata membengkak"));
-            SQLiteHelper.getInstance(this).addGejala(new Gejala("G03","mata terlihat sayup"));
+            SQLiteHelper.getInstance(this).addGejala(new Gejala("G01","Mata mengeluarkan cairan"));
+            SQLiteHelper.getInstance(this).addGejala(new Gejala("G02","Pembengkakan didaerah bagian mata membengkak"));
+            SQLiteHelper.getInstance(this).addGejala(new Gejala("G03","Mata terlihat sayup"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G04","kotoran cair"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G05","warna putih seperti kapur"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G06","kotoran putih seperti kapur"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G07","kotoran hijau seperti cacing"));
-            SQLiteHelper.getInstance(this).addGejala(new Gejala("G08","tulang dada tipis menonjol"));
+            SQLiteHelper.getInstance(this).addGejala(new Gejala("G08","Tulang dada terlihat menonjol"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G09","Bagian Perut terlihat membesar"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G10","Bulu terlihat rusak"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G11","Bulu mengembang"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G12","Bulu terlihat adanya kutu"));
-            SQLiteHelper.getInstance(this).addGejala(new Gejala("G13","Hiding burung terlihat berair"));
-            SQLiteHelper.getInstance(this).addGejala(new Gejala("G14","Kaki burung membengkak"));
+            SQLiteHelper.getInstance(this).addGejala(new Gejala("G13","Hidung burung mengeluarkan cairan"));
+            SQLiteHelper.getInstance(this).addGejala(new Gejala("G14","Bagian kaki burung membengkak"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G15","kaki burung lemas"));
             SQLiteHelper.getInstance(this).addGejala(new Gejala("G16","Kaki kuku burung terlihat memanjang"));
 
-
-
-
+            //table keputusan
             SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P01","G01,G02,G03"));
-            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P02","G04,G03,G11"));
-            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P03","G08,G10,G11"));
-            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P04","G09,G03,G11"));
-            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P05","G03,G04,G10,G11"));
+            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P02","G03,G04,G11"));
+            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P03","G08,G09"));
+            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P04","G03,G11,G11"));
+            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P05","G04,G10,G11,G06"));
             SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P06","G10,G11,G12"));
-            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P07","G13,G03,G11"));
-            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P08","G14,G11,G16"));
+            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P07","G03,G04,G13"));
+            SQLiteHelper.getInstance(this).addKeputusan(new Keputusan("P08","G11,G14,G16"));
 
 
 

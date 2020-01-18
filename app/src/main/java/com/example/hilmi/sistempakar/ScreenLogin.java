@@ -33,7 +33,7 @@ public class ScreenLogin extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_login);
 
-        setTitle("Halaman User Admin");
+        setTitle("Login Admin");
         pd = new ProgressDialog(this);
         pd.setMessage("Loading......");
 

@@ -75,5 +75,8 @@
     <string name="exit">Exit</string>
     <string name="update">Update</string>
     <string name="hapus">Hapus</string>
+
+
+    <string name="konsultasidetilbantuan">Pilihlah gejala yang sesuai dengan penyakit</string>
     <!--end-->
 </resources>

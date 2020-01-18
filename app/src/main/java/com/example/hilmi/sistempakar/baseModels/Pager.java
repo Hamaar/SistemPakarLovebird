@@ -28,10 +28,8 @@ public class Pager extends FragmentStatePagerAdapter {
             case 1:
                 return new PenyakitFragment();
             case 2:
-                return new SolusiFragment();
-            case 3:
                 return new KeputusanFragment();
-            case 4:
+            case 3:
                 return new AkunFragment();
             default:
                 return null;
@@ -40,6 +38,6 @@ public class Pager extends FragmentStatePagerAdapter {
 
     @Override
     public int getCount() {
-        return 5;
+        return 4;
     }
 }

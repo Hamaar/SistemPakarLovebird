@@ -1,9 +1,120 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
+    android:layout_gravity="center"
+    android:background="@color/blue"
+    android:orientation="vertical"
     tools:context="com.example.hilmi.sistempakar.view.activity.ScreenTentangApps">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icn_logo"/>
+        <TextView
+            android:layout_marginTop="4dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:text="Sistem Pakar ini adalah aplikasi yang digunakan untuk mendiagnosis penyakit pada burung LoveBird. Aplikasi ini dibuat menggunakan metode Forward Chaining."
+            />
+    </LinearLayout>
+
+    <!--biodata-->
+    <RelativeLayout
+        android:id="@+id/rl"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:padding="20dp">
+        <ImageView
+            android:id="@+id/iv"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:src="@drawable/curiculum_vitae"/>
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:shadowColor="@color/red"
+            android:layout_below="@id/iv"
+            android:layout_marginTop="20dp"
+            android:text="Nama             :"/>
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:textColor="@color/white"
+            android:shadowColor="@color/red"
+            android:text="NIM                :"/>
+        <TextView
+            android:id="@+id/tv3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2"
+            android:textColor="@color/white"
+            android:shadowColor="@color/red"
+            android:text="Jurusan         :"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv3"
+            android:textColor="@color/white"
+            android:shadowColor="@color/red"
+            android:text="Judul Skripsi :"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/iv"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="90dp"
+            tools:ignore="NotSibling">
+            <TextView
+                android:id="@+id/tv_custom_kdgejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                android:text="Hilmi Hidayat"/>
+            <TextView
+                android:id="@+id/tv_custom_nmgejala"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1115070063"/>
+            <TextView
+                android:id="@+id/cs_jurusan"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Teknik Informatik 15 SEN"/>
+            <TextView
+                android:id="@+id/cs_judul_skripsi"
+                android:textColor="@color/white"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SISTEM PAKAR DIAGNOSIS PENYAKIT PADA BURUNG LOVEBIRD DENAGN METODE FORWARD CHAINING"/>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+    <!--akhir biodata-->
+
+
+
+
+</LinearLayout>

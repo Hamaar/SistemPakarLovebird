@@ -56,6 +56,7 @@ public class ScreenLihatData extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_screen_lihat_data);
+        setTitle("Lihat Data Gejala Dan Penyakit");
 
         spinner = (Spinner) findViewById(R.id.spinner);
         listview = (ListView) findViewById(R.id.listView);
@@ -100,42 +101,42 @@ public class ScreenLihatData extends AppCompatActivity {
 
 
 //===================================================================================
-
-        final List<String> list = sqLiteHelper.getListUpdateGejala();
-        final List<String> listPenyakit = sqLiteHelper.getListUpdatePenyakit();
-        listview.setSelector(R.color.blue);
-        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
-                final String seletionGejala = list.get(arg2);
-                final String selectionPenyakit = listPenyakit.get(arg2);
-                int pos = spinner.getSelectedItemPosition();
-
-               if (cursorgejala == cursorgejala) {
-                 Toast.makeText(getApplicationContext(), "Opsi" +  seletionGejala, Toast.LENGTH_SHORT).show();
-
-               }
-                if (pos == 0 ) {
-                    //update
+//listview klik gejala dan penyakit
+//        final List<String> list = sqLiteHelper.getListUpdateGejala();
+//        final List<String> listPenyakit = sqLiteHelper.getListUpdatePenyakit();
+//        listview.setSelector(R.color.blue);
+//        listview.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+//            @Override
+//            public void onItemClick(AdapterView arg0, View arg1, int arg2, long arg3) {
+//                final String seletionGejala = list.get(arg2);
+//                final String selectionPenyakit = listPenyakit.get(arg2);
+//                int pos = spinner.getSelectedItemPosition();
+//
+//               if (cursorgejala == cursorgejala) {
+//                 Toast.makeText(getApplicationContext(), "Opsi" +  seletionGejala, Toast.LENGTH_SHORT).show();
+//
+//               }
+//                if (pos == 0 ) {
+//                    //update
+////                    Intent in_update = new Intent(getApplicationContext(), ScreenLihatDataDetil.class);
+////                    in_update.putExtra("update_gejala", seletionGejala );
+////                    startActivity(in_update);
+////                    Log.d(TAG, "gejaala: " + seletionGejala);
+////                    Toast.makeText(getApplicationContext(), "Opsi" +  seletionGejala, Toast.LENGTH_SHORT).show();
+//                }
+//
+//                if(pos == 1) {
+////                    //view penyakit
 //                    Intent in_update = new Intent(getApplicationContext(), ScreenLihatDataDetil.class);
-//                    in_update.putExtra("update_gejala", seletionGejala );
+//                    in_update.putExtra("update_penyakit", selectionPenyakit );
 //                    startActivity(in_update);
-//                    Log.d(TAG, "gejaala: " + seletionGejala);
-//                    Toast.makeText(getApplicationContext(), "Opsi" +  seletionGejala, Toast.LENGTH_SHORT).show();
-                }
-
-                if(pos == 1) {
-//                    //view penyakit
-                    Intent in_update = new Intent(getApplicationContext(), ScreenLihatDataDetil.class);
-                    in_update.putExtra("update_penyakit", selectionPenyakit );
-                    startActivity(in_update);
-                    Log.d(TAG, "penyakit: " + selectionPenyakit);
-                    Toast.makeText(getApplicationContext(), "Opsi" +  selectionPenyakit, Toast.LENGTH_SHORT).show();
-                    return;
-
-                }
-            }
-        });
+//                    Log.d(TAG, "penyakit: " + selectionPenyakit);
+//                    Toast.makeText(getApplicationContext(), "Opsi" +  selectionPenyakit, Toast.LENGTH_SHORT).show();
+//                    return;
+//
+//                }
+//            }
+//        });
 
 
 

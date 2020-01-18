@@ -8,34 +8,29 @@
 
 
 
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_below="@+id/toolbar"
         android:id="@+id/topContent"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:padding="10.50dp"
+        android:background="@color/blue">
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:hint="Cari gejala ..."
+            android:padding="13.05dp"
             android:singleLine="true"
+            android:background="@color/white"
             android:id="@+id/txtSearch"/>
     </LinearLayout>
 
-    <ProgressBar
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentBottom="true"
-        android:layout_centerInParent="true"
-        android:layout_marginStart="169dp"
-        android:layout_marginLeft="169dp"
-        android:layout_marginBottom="76dp"
-        android:background="@xml/progress_dialog"/>
+
 
     <ListView
-        android:padding="5dp"
+        android:padding="2dp"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_above="@+id/btnDiagnosa"
@@ -47,7 +42,10 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
+        android:textColor="@color/white"
+        android:shadowColor="@color/red"
+        android:textColorHint="@color/red"
         android:background="@color/blue"
-        android:text="Diagnosa Sekarang"/>
+        android:text="KONSULTASI Sekarang"/>
 
 </RelativeLayout>

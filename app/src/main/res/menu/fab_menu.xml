@@ -7,12 +7,6 @@
         android:id="@+id/fab_penyakit"
         android:title="@string/penyakit"/>
     <item
-        android:id="@+id/fab_solusi"
-        android:title="@string/solusi" />
-    <item
-        android:id="@+id/fab_kode_penyakit_solusi"
-        android:title="@string/kd_penyakit_solusi" />
-    <item
         android:id="@+id/fab_rulebase"
         android:title="@string/rulebase" />
 

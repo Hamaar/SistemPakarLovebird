@@ -50,7 +50,7 @@
             android:name=".view.activity.ScreenGallery"
             android:parentActivityName=".IndexUtama" />
         <activity android:name=".adminpanel.ScreenAdminDetil" />
-        <activity android:name=".ScreenLogin" />
+        <activity android:name=".ScreenLogin" android:parentActivityName=".view.activity.ScreenLihatData" />
         <activity android:name=".adminpanel.ScreenAdmin" />
         <activity android:name=".adminpanel.ScreenUpdate" />
         <activity android:name=".adminpanel.ScreenTambahData" />

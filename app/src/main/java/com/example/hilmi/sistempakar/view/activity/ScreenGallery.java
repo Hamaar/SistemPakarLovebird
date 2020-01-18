@@ -57,7 +57,7 @@ public class ScreenGallery extends AppCompatActivity  implements View.OnClickLis
         btnImageGallery7 = (ImageView) findViewById(R.id.iv_galery_btn7);
 
 
-        ivImagePenyakit.setImageResource(imgGallery[0]);
+        ivImagePenyakit.setImageResource(imgGallery[0]); txtShowPenyakit.setText(strPenyakit[0]);
         btnImageGallery.setImageResource(imgGallery[0]);
         btnImageGallery2.setImageResource(imgGallery[1]);
         btnImageGallery3.setImageResource(imgGallery[2]);
@@ -65,6 +65,7 @@ public class ScreenGallery extends AppCompatActivity  implements View.OnClickLis
         btnImageGallery5.setImageResource(imgGallery[4]);
         btnImageGallery6.setImageResource(imgGallery[5]);
         btnImageGallery7.setImageResource(imgGallery[6]);
+
 
 
 

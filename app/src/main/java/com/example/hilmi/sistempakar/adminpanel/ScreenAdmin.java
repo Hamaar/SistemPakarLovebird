@@ -100,16 +100,14 @@ public class ScreenAdmin extends AppCompatActivity {
 
         tbGejala.setText("Gejala");
         tbPenyakit.setText("Penyakit");
-        tbSolusi.setText("Solusi");
         tbKeputusan.setText("RuleBase");
         tbUsers.setText("Users");
 
 
         tabLayout.addTab(tbGejala, 0);
         tabLayout.addTab(tbPenyakit, 1);
-        tabLayout.addTab(tbSolusi, 2);
-        tabLayout.addTab(tbKeputusan, 3);
-        tabLayout.addTab(tbUsers, 4);
+        tabLayout.addTab(tbKeputusan, 2);
+        tabLayout.addTab(tbUsers, 3);
 
 
         tabLayout.setTabTextColors(ContextCompat.getColorStateList(this, R.color.white));
@@ -163,10 +161,12 @@ public class ScreenAdmin extends AppCompatActivity {
 
 
 
+
         fabSpeedDial.setMenuListener(new SimpleMenuListenerAdapter() {
             @Override
             public boolean onMenuItemSelected(MenuItem menuItem) {
                 if (menuItem.getItemId() == R.id.fab_gejala){
+
                     Intent i = new Intent(ScreenAdmin.this, ScreenTambahData.class);
                     i.putExtra("fab_add_gejala", key);
                     startActivity(i);
@@ -174,16 +174,6 @@ public class ScreenAdmin extends AppCompatActivity {
                 else if (menuItem.getItemId() == R.id.fab_penyakit){
                     Intent i = new Intent(ScreenAdmin.this, ScreenTambahData.class);
                     i.putExtra("fab_add_penyakit", key);
-                    startActivity(i);
-                }
-                else if (menuItem.getItemId() == R.id.fab_solusi){
-                    Intent i = new Intent(ScreenAdmin.this, ScreenTambahData.class);
-                    i.putExtra("fab_add_solusi", key);
-                    startActivity(i);
-                }
-                else if (menuItem.getItemId() == R.id.fab_kode_penyakit_solusi){
-                    Intent i = new Intent(ScreenAdmin.this, ScreenTambahData.class);
-                    i.putExtra("fab_add_penyakit_solusi", key);
                     startActivity(i);
                 }
                 else if (menuItem.getItemId() == R.id.fab_rulebase){
@@ -216,14 +206,10 @@ public class ScreenAdmin extends AppCompatActivity {
                         break;
                     }
                     case 2: {
-                        tbSolusi.setText("Solusi");
-                        break;
-                    }
-                    case 3: {
                         tbKeputusan.setText("RuleBase");
                         break;
                     }
-                    case 4: {
+                    case 3: {
                         tbUsers.setText("Users");
                         break;
                     }

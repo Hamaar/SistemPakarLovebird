@@ -4,16 +4,16 @@ package com.example.hilmi.sistempakar.models;
 
 public class Keputusan {
     private int id;
-    private String pid,kode_gejala;
+    private String kode_penyakit,kode_gejala;
 
-    public Keputusan(int id, String pid, String kode_gejala) {
+    public Keputusan(int id, String kode_penyakit, String kode_gejala) {
         this.id = id;
-        this.pid = pid;
+        this.kode_penyakit = kode_penyakit;
         this.kode_gejala = kode_gejala;
     }
 
-    public Keputusan(String pid, String kode_gejala) {
-        this.pid = pid;
+    public Keputusan(String kode_penyakit, String kode_gejala) {
+        this.kode_penyakit = kode_penyakit;
         this.kode_gejala = kode_gejala;
     }
 
@@ -26,11 +26,11 @@ public class Keputusan {
     }
 
     public String getPid() {
-        return pid;
+        return kode_penyakit;
     }
 
     public void setPid(String pid) {
-        this.pid = pid;
+        this.kode_penyakit = pid;
     }
 
     public String getKode_gejala() {

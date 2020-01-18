@@ -5,6 +5,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Handler;
 import android.os.Parcelable;
+import android.support.design.widget.Snackbar;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -50,6 +51,7 @@ public class Konsultasi extends AppCompatActivity {
     AlertDialog.Builder dialog;
     LayoutInflater inflater;
     View dialogView;
+    Snackbar snackbar;
 
     //loading
     private int loading = 3000;
@@ -59,6 +61,7 @@ public class Konsultasi extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.form_diagnosa);
+        setTitle("Konsultasi");
 
         listview = (ListView)findViewById(R.id.listGejala);
         btnDiagnosa = (Button)findViewById(R.id.btnDiagnosa);
@@ -66,6 +69,7 @@ public class Konsultasi extends AppCompatActivity {
         txtSearch = (EditText)findViewById(R.id.txtSearch);
         setupData();
         dialogFormUser();
+
 
     }
 
@@ -135,7 +139,9 @@ public class Konsultasi extends AppCompatActivity {
 
 
                 if(checked.size()==listgejalas.size()){
-                    Toast.makeText(getApplicationContext(), "Pililh gejala yang Sesuai", Toast.LENGTH_LONG).show();
+
+                    Snackbar.make(findViewById(R.id.listGejala), "Pilihlah data Gejala Yang Sesuai !!!", Snackbar.LENGTH_LONG).show();
+//                    Toast.makeText(getApplicationContext(), "Pililh gejala yang Sesuai", Toast.LENGTH_LONG).show();
                     return;
                 }
                 if(checked.size() <= listgejalas.size()) {

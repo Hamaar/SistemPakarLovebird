@@ -43,7 +43,7 @@
             android:id="@+id/tvResultNamaGejala"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Nama Gejala"
+            android:text=""
             android:textColor="@color/black"
             android:textSize="28sp" />
 
@@ -52,7 +52,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:textColor="@color/blue"
-            android:text="Berdasrkan Solusi Dari Penyakit" />
+            android:text="Solusi" />
 
         <TextView
             android:id="@+id/tvResultSolusi"
@@ -82,6 +82,7 @@
             android:background="@color/blue"
             android:backgroundTintMode="multiply"
             android:layout_alignParentBottom="true"
+            android:textColor="@color/white"
             android:text="Periksa Ulang"/>
 
         <Button
@@ -93,6 +94,7 @@
             android:background="@color/red"
             android:layout_alignParentBottom="true"
             android:backgroundTintMode="multiply"
+            android:textColor="@color/white"
             android:text="Selesai"/>
     </LinearLayout>
 </RelativeLayout>
